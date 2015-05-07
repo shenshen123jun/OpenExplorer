@@ -9,6 +9,9 @@ import openexplorer.util.IOUtils;
 public class BrowserDetachTest {
 
     public static void main(String[] args) throws Exception {
+    	
+    	System.out.println("test");
+    	
         Process process = Runtime.getRuntime().exec("which nautilus");
         String nautilusPath = IOUtils.toString(process.getInputStream());
         System.out.println("nautilus path:[" + nautilusPath + "]");
